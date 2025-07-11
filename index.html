@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palestrantes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main class="main-container">
+        <section class="container">
+            <header>
+                <div class="logo">
+                    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.84 228">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #fff;
+                                }
+
+                                .cls-2 {
+                                    fill: #f5a205;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Camada_1-2" data-name="Camada 1">
+                            <g>
+                                <g>
+                                    <path class="cls-1"
+                                        d="M95.79,96.46l16.38-1.44c1.48-5.73,2.33-11.98,2.6-18.71-8.66-6.66-14.83-16.41-14.83-31.58,0-5.97,1.18-11.53,3.35-16.55-11.18-15.22-31.07-23.39-62.3-23.39H0v133.07h40.99c29.84,0,49.33-7.62,60.76-21.56-2.47-4.61-4.23-9.74-5.19-15.35l-.77-4.5ZM42.64,105.15h-5.51V37.33h5.15c28.3,0,34.92,11.76,34.92,33.82s-6.62,34-34.55,34Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M197.92,120.73l-3.14-3.12,10.33-10.39,5.05-5.08.02-.02c.07-.97.12-1.94.12-2.94,0-.04,0-.07,0-.11-.11-47.96-69.98-32.64-69.98-55.41,0-.03,0-.06,0-.1.06-6.63,5.83-10.57,15-10.57,10.13,0,16.46,4.16,19.35,12.66l33.82-3.25c0-.07-.02-.14-.03-.2-.12-.83-.27-1.64-.43-2.45l-6.08-6.12-7.18-7.22,1.9-1.89,2.91-2.89c-9.4-11.24-25.31-16.84-45.53-16.84-23.68,0-42.02,10.55-47.9,27.76-1.3,3.79-2,7.9-2.01,12.3,0,.03,0,.06,0,.09,0,11.97,4.29,20.2,10.72,26.13,19.21,17.69,57.59,14.86,58.35,29.7,0,.02,0,.03,0,.05.18,6.87-6.15,11.21-16.28,11.21-11.39,0-18.45-5.06-21.16-14.65l-24.95,2.19-10.1.88h-.04c.75,4.41,2.03,8.46,3.78,12.16,8.34,17.68,27.52,27.08,52.64,27.08,19.43,0,34.77-5.87,43.88-15.89l-.1-.1-2.99-2.98Z">
+                                    </path>
+                                    <g>
+                                        <polygon class="cls-1"
+                                            points="301.88 75.05 298.91 78.03 278.39 98.67 275.43 101.65 317.22 143.73 343.84 117.29 301.88 75.05">
+                                        </polygon>
+                                        <path class="cls-1"
+                                            d="M205.55,31.3l6.38,6.42,14.74,14.84c1.17-.85,2.42-1.58,3.74-2.2,2.97-1.39,6.28-2.17,9.78-2.17,6.51,0,12.4,2.71,16.61,7.05l9.74-9.8,2.97-2.98L227.34,0l-22.11,21.97-3.02,3-.08.08-1.4,1.39,4.67,4.7.17.17Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M295.95,75.05l2.97-2.98,2.97-2.98,41.95-42.18-.16-.16L317.23.45l-41.78,42.02-2.97,2.98-2.97,2.98-10.05,10.11c.81,1.22,1.51,2.51,2.08,3.87,1.15,2.75,1.79,5.76,1.79,8.92,0,3.55-.81,6.91-2.24,9.92-.63,1.32-1.38,2.56-2.23,3.73-.83,1.14-1.77,2.19-2.79,3.16-4.15,3.92-9.74,6.33-15.88,6.33-3.11,0-6.08-.62-8.8-1.74-1.37-.56-2.67-1.25-3.89-2.06l-13.29,13.37-5.24,5.27-.07.07-8.02,8.06-.16.16,2.85,2.84.09.09,2.89,2.88,20.77,20.65,42.17-42.4,2.97-2.98,2.97-2.98,20.52-20.63Z">
+                                        </path>
+                                        <path class="cls-2"
+                                            d="M255.95,61.76c-.7-1.15-1.52-2.22-2.45-3.19-3.36-3.5-8.08-5.7-13.31-5.7-2.18,0-4.26.4-6.2,1.1-1.41.5-2.74,1.16-3.97,1.97-1.18.78-2.25,1.7-3.22,2.72-3.13,3.31-5.07,7.76-5.07,12.67,0,5.27,2.23,10.01,5.77,13.38.97.92,2.05,1.74,3.2,2.43.06.04.13.08.19.12,1.29.76,2.68,1.37,4.15,1.79,1.63.48,3.36.74,5.14.74,4.86,0,9.28-1.9,12.58-4.98,1.03-.96,1.96-2.03,2.75-3.2.82-1.22,1.48-2.55,2-3.96.72-1.98,1.14-4.1,1.14-6.32,0-1.82-.28-3.58-.77-5.24-.43-1.47-1.05-2.85-1.82-4.14-.04-.07-.08-.13-.12-.19Z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <path class="cls-1"
+                                        d="M2.91,164.36h8.14c11.52,0,16,4.87,16,14.23s-4.48,14.23-16,14.23H2.91v-28.46ZM11.28,187.28c7.15,0,9.47-2.79,9.47-8.73s-2.32-8.73-9.51-8.73h-2.12v17.45h2.16Z">
+                                    </path>
+                                    <path class="cls-1" d="M31.84,164.36h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M42.92,178.51c0-8.69,5.46-14.58,13.52-14.58,6.29,0,10.42,2.44,12.19,7.66l-6.13,1.14c-1.06-2.4-3.03-3.5-5.97-3.5-4.44,0-7.35,3.66-7.35,9.35s2.87,9.32,7.43,9.32c3.89,0,6.49-2.24,6.72-6.52h-6.8v-4.8h13.17c.08.87.08,1.65.08,2.44,0,8.77-5.11,14.11-13.44,14.11s-13.4-5.74-13.4-14.62Z">
+                                    </path>
+                                    <path class="cls-1" d="M74.6,164.36h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M91.89,169.91h-6.96v-5.54h20.05v5.54h-6.88v22.92h-6.21v-22.92Z"></path>
+                                    <path class="cls-1"
+                                        d="M126.28,187.87h-12.19l-1.81,4.95h-6.52l11.28-28.46h6.29l11.32,28.46h-6.56l-1.81-4.95ZM124.63,183.31l-4.44-12.19-4.44,12.19h8.88Z">
+                                    </path>
+                                    <path class="cls-1" d="M137.16,164.36h6.21v22.92h10.53v5.54h-16.74v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M166.64,185.12l5.94-.79c.86,2.56,3.03,3.93,6.09,3.93s4.91-1.26,4.87-3.38c-.08-5.58-15.88-1.93-15.88-12.62,0-4.99,4.25-8.33,10.34-8.33s10.34,2.63,11.44,7.7l-5.7.79c-.9-2.28-2.71-3.46-5.54-3.46s-4.48,1.22-4.48,3.18c0,6.05,16.08,1.73,16.08,12.54,0,5.15-4.36,8.53-11.08,8.53-6.29,0-10.85-2.91-12.07-8.1Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M193.48,179.61v-15.25h6.21v15.21c0,5.7,1.77,8.06,5.86,8.06s5.82-2.36,5.82-8.02v-15.25h6.25v15.29c0,9.2-4.05,13.56-12.07,13.56s-12.07-4.32-12.07-13.6Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M225.87,164.36h7.55l6.6,21.97,6.6-21.97h7.59l4.6,28.46h-6.29l-3.22-20.28-6.25,20.28h-6.01l-6.29-20.28-3.22,20.28h-6.25l4.6-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M265.6,164.36h7.55l6.6,21.97,6.6-21.97h7.59l4.6,28.46h-6.29l-3.22-20.28-6.25,20.28h-6.01l-6.29-20.28-3.22,20.28h-6.25l4.6-28.46Z">
+                                    </path>
+                                    <path class="cls-1" d="M302.54,164.36h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M319.84,169.91h-6.96v-5.54h20.05v5.54h-6.88v22.92h-6.21v-22.92Z"></path>
+                                    <path class="cls-1"
+                                        d="M2.91,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54H2.91v-28.46Z">
+                                    </path>
+                                    <path class="cls-2"
+                                        d="M33.61,212.48l-9.35-13.4h7.43l5.39,8.18,5.42-8.18h7.43l-9.35,13.36,10.34,15.09h-7.31l-6.52-9.91-6.52,9.91h-7.31l10.38-15.05Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M53.37,199.07h8.21c9.94,0,13.76,3.07,13.76,10.53s-3.81,10.42-13.6,10.42h-2.16v7.51h-6.21v-28.46ZM62.69,214.56c4.4,0,6.33-1.42,6.33-5.07s-1.93-5.03-6.33-5.03h-3.1v10.1h3.1Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M79.51,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54h-18.83v-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M118.97,227.53l-4.99-9.12c-.51.04-1.02.04-1.53.04h-2.99v9.08h-6.25v-28.46h9.2c9.16,0,12.89,3.07,12.89,9.55,0,4.09-1.81,7.08-5.58,8.65l6.29,10.26h-7.04ZM112.72,213.77c4.36,0,6.33-1.18,6.33-4.72s-1.96-4.76-6.33-4.76h-3.3v9.47h3.3Z">
+                                    </path>
+                                    <path class="cls-1" d="M130.17,199.07h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M142.23,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54h-18.83v-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M165.93,199.07h6.09l12.22,18.71v-18.71h6.21v28.46h-6.05l-12.26-18.79v18.79h-6.21v-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M195.29,213.38c0-10.1,6.68-14.66,13.6-14.66,5.31,0,11.16,2.63,12.81,10.18l-6.09,1.06c-.98-3.77-3.66-5.54-6.76-5.54-4.25,0-7.15,3.38-7.15,8.96s2.87,8.92,7.15,8.92c3.14,0,5.86-1.81,6.76-5.7l6.13,1.06c-1.61,7.67-7.51,10.34-12.85,10.34-6.92,0-13.6-4.25-13.6-14.62Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M226.18,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54h-18.83v-28.46Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <div class="contato">
+                    <a href="https://dsx.com.vc/">Home</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">Palestrantes</a>
+                    <a href="https://www.sympla.com.br/evento/dsx-digital-summit-experience/2974832?utm_source=whatsapp&utm_medium=grupo_vip"
+                        target="_blank" rel="noopener noreferrer">Comprar agora</a>
+                </div>
+            </header>
+            <div class="main-title">
+                <h2>Grandes Mentes. Grandes ideias. Conheça nosso palestrantes.</h2>
+                <p>Assista de perto quem está liderando a transformação nos negócios no Brasil.</p>
+            </div>
+            <div class="container">
+                <div class="card-container" id="cardContainer">
+                    <div class="card" data-name="// Alfredo Soares"
+                        data-description="Empreendedor e sócio do G4 Educação."
+                        data-sobre="Alfredo é referência em vendas, varejo e construção de marcas com propósito. Impactou milhares de negócios com sua visão prática e aceleradora.">
+                        <h2>// Alfredo Soares</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/ALFREDO.png" alt="// Alfredo Soares">
+                        <p>Empreendedor e sócio do G4 Educação.</p>
+                    </div>
+                    <div class="card" data-name="// JOÃO KEPLER"
+                        data-description="Investidor anjo, empreendedor e autor best-seller."
+                        data-sobre="João é CEO da Bossa Invest, o maior fundo de venture capital em startups early stage da América Latina.">
+                        <h2>// JOÃO KEPLER</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/JOAO-KEPLER.png" alt="// JOÃO KEPLER">
+                        <p>Investidor anjo, empreendedor e autor best-seller.</p>
+                    </div>
+                    <div class="card" data-name="// Camila Renaux"
+                        data-description="Especialista em Marketing Estratégico, Marketing Digital e Inteligência Artificial pelo MIT."
+                        data-sobre="Uma das maiores mentes do Brasil, com mais de 20 anos de experiência, já atendeu marcas como Philips, Santander e SAP, unindo inovação e resultados reais.">
+                        <h2>// Camila Renaux</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/CAMILA-1.png" alt="// Camila Renaux">
+                        <p>Especialista em Marketing Estratégico, Marketing Digital e Inteligência Artificial pelo MIT.
+                        </p>
+                    </div>
+                    <div class="card" data-name="// Rafael Liporace"
+                        data-description="Referência nacional em marketing promocional e encantamento."
+                        data-sobre="Criador de experiências memoráveis que movimentam marcas, pessoas e negócios. À frente de projetos como a Tardezinha e o Camarote Rio, ele mostra como transformar ideias em conexões reais e resultados exponenciais.">
+                        <h2>// Rafael Liporace</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RAFAEL-LIPORACE-1.png"
+                            alt="// Rafael Liporace">
+                        <p>Referência nacional em marketing promocional e encantamento.</p>
+                    </div>
+                    <div class="card" data-name="// João Brognoli" data-description="CEO da Duo&Co"
+                        data-sobre="Agência premiada e referência nacional. João é conselheiro da RD Station, especialista em inovação e criador da BRAIN Mentoria. Já impactou mais de 40 mil pessoas com sua visão estratégica.">
+                        <h2>// João Brognoli</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/JOAO-BROGNOLI-1.png"
+                            alt="// João Brognoli">
+                        <p>CEO da Duo&Co</p>
+                    </div>
+                    <div class="card" data-name="// Nicolas Charão"
+                        data-description="Referência nacional em performance comercial."
+                        data-sobre="Criador do método Agências de Elite e especialista em escalar negócios digitais com inteligência e tecnologia. Já impactou mais de 1.000 agências com sua metodologia e é presença marcante nos maiores eventos do setor.">
+                        <h2>// Nicolas Charão</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/NICOLAS-CHARAO-3.png"
+                            alt="// Nicolas Charão">
+                        <p>Referência nacional em performance comercial.</p>
+                    </div>
+                    <div class="card" data-name="// Fernando Miranda" data-description="CEO da Staage"
+                        data-sobre="Especialista em Growth Marketing com mais de 10 anos de experiência. Ex-CMO da EXAME e do InfoMoney, já formou mais de 17 mil alunos e é host do ROI Hunters, um dos podcasts de negócios mais ouvidos do país.">
+                        <h2>// Fernando Miranda</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/NICOLAS-CHARAO-3.png"
+                            alt="// Fernando Miranda">
+                        <p>CEO da Staage</p>
+                    </div>
+                    <div class="card" data-name="// André Siqueira" data-description="Cofundador da RD Station"
+                        data-sobre="Referência em marketing digital no Brasil. André é autor do best-seller Máquina de Aquisição de Clientes, eleito Forbes Under 30 e vencedor dos prêmios Empreendedor do Ano pela Endeavor e PEGN. Foi cofundador da RD Station, vendida por R$ 2 bilhões à TOTVS.">
+                        <h2>// André Siqueira</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/ANDRE-SIQUEIRA-2.png"
+                            alt="// André Siqueira">
+                        <p>Cofundador da RD Station</p>
+                    </div>
+                    <div class="card" data-name="// Christiano Santos"
+                        data-description="Especialista em LinkedIn e Marketing Digital"
+                        data-sobre="Jornalista e ex-Coordenador de Mídias Sociais da Editora Globo, com 10 anos de atuação. Palestrante nos maiores eventos do país e professor em instituições como ESPM e SENAC. É LinkedIn Top Voices 2018 e criador do grupo LinkedIn Brasil de A a Z.">
+                        <h2>// Christiano Santos</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/CRISTIANO-SANTOS-2.png"
+                            alt="// Christiano Santos">
+                        <p>Especialista em LinkedIn e Marketing Digital</p>
+                    </div>
+                    <div class="card" data-name="// Rafael Kiso"
+                        data-description="Fundador da mLabs e Top 20 iBest 2024"
+                        data-sobre="CMO da mLabs, plataforma líder em gestão de redes sociais no Brasil, usada por +130 mil marcas. Cofundador da Focusnetwork e criador do método Unbound Marketing, já impactou mais de 100 mil alunos e empresas em 24 anos de carreira no digital.">
+                        <h2>// Rafael Kiso</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RafelKiso-1.png" alt="// Rafael Kiso">
+                        <p>Fundador da mLabs e Top 20 iBest 2024</p>
+                    </div>
+                    <div class="card" data-name="// Lucas Pimenta" data-description="Estrategista digital político"
+                        data-sobre="Consultor de campanhas como a de Amom Mandel (Manaus) e Soraya Thronicke (presidencial), teve destaque em 2024 com estratégias digitais para candidatos de grandes capitais. Com os 20 maiores engajamentos de candidatos a prefeito das 26 capitais brasileiras e criador da Escola dos Políticos, que elegeu 317 alunos.">
+                        <h2>// Lucas Pimenta</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/LUCAS-PIMENTA-2.png"
+                            alt="// Lucas Pimenta">
+                        <p>Estrategista digital político</p>
+                    </div>
+                    <div class="card" data-name="// Marc Tawil"
+                        data-description="Especialista nº 1 em Comunicação no LinkedIn Brasi"
+                        data-sobre="Mentor e palestrante com mais de 190 mil alunos e 4 TEDx no currículo, é Instrutor Oficial do LinkedIn Learning com 160 mil treinados. Ex-colunista da Exame, membro do Reputation Council da Ipsos e ex-CEO da agência Tawil Comunicação.">
+                        <h2>// Marc Tawil</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/MARC-TAWIL-2.png" alt="// Marc Tawil">
+                        <p>Especialista nº 1 em Comunicação no LinkedIn Brasi</p>
+                    </div>
+                    <div class="card" data-name="// Carol Lima"
+                        data-description="Diretora de Social Media na 8D Hubify e autora best-seller"
+                        data-sobre="Com 17 anos de experiência, já liderou equipes no Senac, Locaweb, RD Station e VTEX. Hoje comanda as frentes de conteúdo, redes sociais, audiovisual e influenciadores na 8D Hubify. Autora do livro “Como acabar com sua empresa em apenas 140 caracteres”, é referência nacional em estratégia digital, community management e branding.">
+                        <h2>// Carol Lima</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/CAROL-LIMA-3.png" alt="// Carol Lima">
+                        <p>Diretora de Social Media na 8D Hubify e autora best-seller</p>
+                    </div>
+                    <div class="card" data-name="// Hanah Franklin"
+                        data-description="Criadora de conteúdo, futurista e especialista em comportamento digital."
+                        data-sobre="Hanah é fundadora do projeto Criadora do Futuro, onde conecta inovação, cultura e tecnologia com olhar humanizado. Reconhecida por sua visão provocadora e inspiradora, atua como palestrante e mentora de criadores, marcas e empresas que desejam se adaptar à nova era digital com autenticidade e impacto.">
+                        <h2>// Hanah Franklin</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/HANAH-FRANKLIN-3.png"
+                            alt="// Hanah Franklin">
+                        <p>Criadora de conteúdo, futurista e especialista em comportamento digital.</p>
+                    </div>
+                    <div class="card" data-name="// Marcel Roxo"
+                        data-description="Especialista em marketing, neurociência do consumo e crescimento de marcas."
+                        data-sobre="Publicitário com 15 anos de experiência, é especialista pela USP e pós-graduando em neurociência. Já atendeu mais de 200 empresas e liderou projetos como Staage, Performan-C e The Advisory Board. Criador do Santos Digital Week, é referência nacional por unir dados, estratégia e emoção na construção de marcas que crescem com consistência.">
+                        <h2>// Marcel Roxo</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/MarceloRoxo.png" alt="// Marcel Roxo">
+                        <p>Especialista em marketing, neurociência do consumo e crescimento de marcas.</p>
+                    </div>
+                    <div class="card" data-name="// Ben Ludmer"
+                        data-description="Mágico, humorista e roteirista, especialista em storytelling e encantamento."
+                        data-sobre="Primeiro brasileiro a se apresentar no Epcot (Disney), Ben une criatividade, ilusionismo e narrativa para transformar experiências em momentos memoráveis. Com passagens por TV, teatro e cinema, também atua como palestrante, revelando os bastidores do imagineering e das técnicas de impacto utilizadas pela Disney para encantar pessoas e marcas.">
+                        <h2>// Ben Ludmer</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/Ben.png" alt="// Ben Ludmer">
+                        <p>Mágico, humorista e roteirista, especialista em storytelling e encantamento.</p>
+                    </div>
+                    <div class="main-title">
+                        <h2>Palestrantes Locais</h2>
+                    </div>
+                    <!-- Palestrantes Locais Inicio dos Cards -->
+                    <div class="card" data-name="// Rodrigo Araújo"
+                        data-description="Gestor de Marketing e Vendas na Agência Digital Comunicação"
+                        data-sobre="Com 15 anos de experiência, já liderou estratégias para marcas como Pague Menos e Atack Atacarejo. Foi eleito o Melhor Vendedor de Inbound Marketing no Brasil e acumula mais de R$ 2 milhões em vendas recorrentes com campanhas digitais. Especialista em Marketing e Branding">
+                        <h2>// Rodrigo Araújo</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RODRIGO-1.png" alt="// Ben Ludmer">
+                        <p>Gestor de Marketing e Vendas na Agência Digital Comunicação</p>
+                    </div>
+                    <div class="card" data-name="// Breno Maciel" data-description="CEO da Vanguarda Martech"
+                        data-sobre="Lidera a maior agência do Norte do Brasil, certificada como Diamond RD Station, com mais de 100 clientes ativos e R$ 60 milhões/ano em verbas de marketing gerenciadas. É palestrante pelo 3º ano consecutivo no RD Summit em SP.">
+                        <h2>// Breno Maciel</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/BRENO-MACIEL-2.png" alt="// Ben Ludmer">
+                        <p>CEO da Vanguarda Martech</p>
+                    </div>
+                    <div class="card" data-name="// Luiz Eduardo Leal"
+                        data-description="Diretor da RUMO MKT e da FCDL Amazonas"
+                        data-sobre="Especialista em estratégias de marketing digital, é também diretor da CDL Manaus e palestrante sobre empreendedorismo e marketing. Fundador dos projetos “Trânsito Manaus” e “Ônibus Manaus”, atua como consultor e é reconhecido pelo impacto regional e paixão pela Amazônia.">
+                        <h2>// Luiz Eduardo Leal</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/LUIZ-EDUARDO.png" alt="// Ben Ludmer">
+                        <p>Diretor da RUMO MKT e da FCDL Amazonas</p>
+                    </div>
+                    <div class="card" data-name="// Carlos Oshiro"
+                        data-description="Fundador da Targo Consultoria Empresarial"
+                        data-sobre="Referência em Nova Economia, impacta mais de 1.500 empresários em Manaus com sua metodologia. É colunista de empreendedorismo há 10 anos na Rede Amazônica e Portal G1, além de apresentar o programa Mercado Inteligente na Rádio CBN.">
+                        <h2>// Carlos Oshiro</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/CARLOSOSHIRO-1.png" alt="// Ben Ludmer">
+                        <p>Fundador da Targo Consultoria Empresarial</p>
+                    </div>
+                    <div class="card" data-name="// Rafael Amorim" data-description="Chief Sales Officer da Pará Cabos"
+                        data-sobre="Com mais de 15 anos em liderança comercial, é CSO da Pará Cabos, membro do G4 Club Brasil e ex-presidente da AJE-AM. Host do podcast Wowcastt, atua com foco em vendas, marketing digital e expansão de negócios.">
+                        <h2>// Rafael Amorim</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RAFAEL-AMORIN-3.png"
+                            alt="// Ben Ludmer">
+                        <p>Chief Sales Officer da Pará Cabos</p>
+                    </div>
+                    <div class="card" data-name="// Alcides Netto"
+                        data-description="Fotógrafo publicitário e criador audiovisual"
+                        data-sobre="Com 18 anos de experiência, é especialista em fotografia publicitária e bancos de imagens corporativos. Atende empresas, agências e produtoras com conteúdos visuais impactantes. É bacharel em Design com foco em Comunicação Publicitária e inspiração nas artes, arquitetura e música.">
+                        <h2>// Alcides Netto</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/ALCIDES-NETTO-1.png"
+                            alt="// Ben Ludmer">
+                        <p>Fotógrafo publicitário e criador audiovisual</p>
+                    </div>
+                    <div class="card" data-name="// Aimée Gomes"
+                        data-description="Especialista em tráfego pago, analista de dados e estrategista digital."
+                        data-sobre="Aimée é estrategista de mídia performance da Bemol e já planejou campanhas para mais de 50 empresas de médio e grande porte. Reconhecida por sua liderança em performance digital, domina métricas, gestão de equipe e estratégias de conversão com foco em resultados reais.">
+                        <h2>// Aimée Gomes</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/AIMEEGOMES.png" alt="// Ben Ludmer">
+                        <p>Especialista em tráfego pago, analista de dados e estrategista digital.</p>
+                    </div>
+                    <div class="card" data-name="// Glauber Gomes" data-description="Co-fundador da rumomkt e da rumo.ia, especialista em estratégia digital e inteligência artificial.
+                        "
+                        data-sobre="Mestre em Design de Produtos Digitais, Glauber já foi diretor de marketing para mais de 40 empresas e atua nos setores de varejo, fintechs e B2B. É reconhecido por transformar dados e tecnologia em estratégias que aceleram vendas com inovação e clareza.">
+                        <h2>// Glauber Gomes</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/Glauber.png" alt="// Ben Ludmer">
+                        <p>Co-fundador da rumomkt e da rumo.ia, especialista em estratégia digital e inteligência
+                            artificial.
+                        </p>
+                    </div>
+                    <div class="card" data-name="// Roberta Gaspar"
+                        data-description="COO do All In Club, especialista em experiência do cliente e cultura organizacional."
+                        data-sobre="Com trajetória que une saúde, vendas e gestão, Roberta se tornou referência em encantamento e relacionamento. Consultora há quatro anos, lidera iniciativas voltadas à construção de experiências memoráveis entre marcas e pessoas, sempre com foco humano e estratégico.">
+                        <h2>// Roberta Gaspar</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RobertaGaspar.png" alt="// Ben Ludmer">
+                        <p>COO do All In Club, especialista em experiência do cliente e cultura organizacional.</p>
+                    </div>
+                    <div class="card" data-name="// Fabrício Alvar"
+                        data-description="Consultor estratégico, empreendedor e especialista em performance empresarial."
+                        data-sobre="Fabrício já atuou como CEO, COO e conselheiro em grandes empresas e hoje lidera mentorias de alta performance com foco em crescimento, branding e neurociência. Reconhecido por unir técnica e sensibilidade, é referência em estratégias que conectam lucro, inovação e humanização nos negócios.">
+                        <h2>// Fabrício Alva</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/FABRICIO-ALVA.png" alt="// Ben Ludmer">
+                        <p>Consultor estratégico, empreendedor e especialista em performance empresarial.</p>
+                    </div>
+                    <div class="card" data-name="// Rodrigo Waughan" data-description="Presidente do Grupo Gérbera"
+                        data-sobre="Líder à frente de uma das maiores redes multifranqueadas do Norte, com presença em 46 cidades do Amazonas. Reconhecido pelo selo Great Place to Work por 8 anos consecutivos. Autor do best-seller A Arquitetura do Varejo do Futuro, que alcançou o 1º lugar em vendas no Brasil, inspira milhares de empreendedores com palestras sobre ética, liderança e inovação nos negócios.">
+                        <h2>// Rodrigo Waughan</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RODRIGOWUAGHAN-1.png"
+                            alt="// Ben Ludmer">
+                        <p>Presidente do Grupo Gérbera</p>
+                    </div>
+                    <div class="card" data-name="// Gerson Toller"
+                        data-description="CEO e Co-founder da Soul Plus, especialista em IA aplicada ao varejo."
+                        data-sobre="CEO e Co-founder da Soul Plus, especialista em IA aplicada ao varejo. Com mais de 25 anos em comunicação e marketing digital, Gerson atua na interseção entre tecnologia e atendimento humanizado. Lidera projetos de automação inteligente com foco em escalabilidade, eficiência e compliance, orientando empresas na implantação responsável de assistentes de IA.">
+                        <h2>// Gerson Toller</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/GersonToller.png" alt="// Ben Ludmer">
+                        <p>CEO e Co-founder da Soul Plus, especialista em IA aplicada ao varejo.</p>
+                    </div>
+                    <div class="card" data-name="// Bianca Guedes"
+                        data-description="Triatleta e influenciadora digital, referência em performance e autenticidade."
+                        data-sobre="Com uma trajetória marcada por superação e consistência, Bianca conquistou vaga no Campeonato Mundial de IronMan e se tornou uma das maiores influenciadoras esportivas da região Norte. Usa sua voz para inspirar transformação por meio do esporte, da disciplina e da construção de marca pessoal.">
+                        <h2>// Bianca Guedes</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/BiancaGuedes.png" alt="// Ben Ludmer">
+                        <p>Triatleta e influenciadora digital, referência em performance e autenticidade.</p>
+                    </div>
+                    <div class="card" data-name="// Gisele Oshiro" data-description="CEO da Targo Consultoria"
+                        data-sobre="Especialista em inteligência emocional e hipnoterapeuta certificada. Gisele é colunista da CBN Amazônia, criadora do podcast Mulheres que Inspiram e referência no desenvolvimento humano. Já impactou milhares de pessoas com sua abordagem prática, profunda e transformadora.">
+                        <h2>// Gisele Oshiro</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/GiseleOshiro.png" alt="// Ben Ludmer">
+                        <p>CEO da Targo Consultoria</p>
+                    </div>
+                    <div class="card" data-name="// Suelen Scop" data-description="COO da Singulari Consultoria"
+                        data-sobre="Psicóloga e especialista em gestão estratégica. Suelen lidera projetos em cultura organizacional, liderança e inovação com foco em inteligência artificial aplicada. À frente da operação da Singulari, tem impulsionado empresas da região com uma visão moderna, prática e centrada em pessoas.">
+                        <h2>// Suelen Scop</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/SuelenScop.png" alt="// Ben Ludmer">
+                        <p>COO da Singulari Consultoria</p>
+                    </div>
+                    <div class="card" data-name="// Jéssica Nery"
+                        data-description="Especialista em Marketing Digital e Vendas"
+                        data-sobre="Com 16 anos de experiência comercial e 10 no marketing digital, Jessica é mentora, professora e referência em vendas consultivas com foco em resultado. Criadora de estratégias baseadas em Spin Selling, GPCT e BANT.">
+                        <h2>// Jéssica Nery</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/JessicaNery.png" alt="// Ben Ludmer">
+                        <p>Especialista em Marketing Digital e Vendas</p>
+                    </div>
+                    <div class="card" data-name="// Magno Rodrigues" data-description="Fundador do Pega Bizu"
+                        data-sobre="Matemático e educador financeiro, é criador da metodologia OCRI e especialista em finanças práticas e acessíveis. Já ajudou centenas de pessoas a saírem das dívidas e começarem a investir com consciência. Acredita que conhecimento é o melhor investimento.">
+                        <h2>// Magno Rodrigues</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/MagnoRodrigues.png" alt="// Ben Ludmer">
+                        <p>Fundador do Pega Bizu</p>
+                    </div>
+                    <div class="card" data-name="// Erick Fernandes"
+                        data-description="Diretor Comercial do Centro do Alumínio."
+                        data-sobre="Empreendedor e mentor em vendas com mais de 10 anos de experiência. Criador do método A Trilha da Fortuna, começou como conferente aos 18 anos e se tornou diretor aos 28. Hoje compartilha sua vivência no comércio em palestras e mentorias com foco em ativação comercial.">
+                        <h2>// Erick Fernandes</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/ErickFernandes.png" alt="// Ben Ludmer">
+                        <p>Diretor Comercial do Centro do Alumínio.</p>
+                    </div>
+                    <div class="card" data-name="// Marcus Evangelista"
+                        data-description="Especialista em Crescimento no Instagram"
+                        data-sobre="Economista e empreendedor digital, é tutor do treinamento Instagram para Empresários. Seus conteúdos já geraram dezenas de vídeos virais e vendas de alto impacto pelos stories. Ensina como crescer no digital sem depender de anúncios pagos.">
+                        <h2>// Marcus Evangelista</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/MarcosEvangelista.png"
+                            alt="// Ben Ludmer">
+                        <p>Especialista em Crescimento no Instagram</p>
+                    </div>
+                    <div class="card" data-name="// Jacqueline Guedes" data-description="CEO da Empower Palestras"
+                        data-sobre="Bacharel em Marketing e pós-graduada em Gestão de Pessoas, transforma histórias reais em palestras de alto impacto. Líder de um clube de CEOs para mulheres, atua com foco em comunicação, posicionamento e desenvolvimento humano com propósito.">
+                        <h2>// Jacqueline Guedes</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/JaquelineGuedes.png"
+                            alt="// Ben Ludmer">
+                        <p>CEO da Empower Palestras</p>
+                    </div>
+                    <div class="card" data-name="// Djalma Pinheiro"
+                        data-description="Fundador da maior rede de temakerias do Norte/Nordeste."
+                        data-sobre="Amazonense, pai de três e apaixonado por sushi, Djalma construiu um império gastronômico a partir de um pequeno delivery. Hoje, lidera dezenas de unidades e compartilha sua experiência prática com quem deseja crescer com foco, simplicidade e visão de longo prazo. É referência em gestão acessível e expansão de negócios regionais.">
+                        <h2>// Djalma Pinheiro</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/Djalma.png" alt="// Ben Ludmer">
+                        <p>Fundador da maior rede de temakerias do Norte/Nordeste.</p>
+                    </div>
+                    <div class="card" data-name="// Mariah Acris"
+                        data-description="Diretora audiovisual e publicitária."
+                        data-sobre="Com mais de 15 anos de experiência em vídeo, Mariah combina técnica e sensibilidade criativa em narrativas que conectam marcas, pessoas e territórios. Formada em pub licidade, tem passagem por escolas como AIC (SP), EICTV (Cuba) e Bucareste Ateliê de Cinema. É referência na produção audiovisual do Norte, com uma visão autoral e inovadora voltada ao impacto real da comunicação.">
+                        <h2>// Mariah Acris</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/MariahCris.png" alt="// Ben Ludmer">
+                        <p>Diretora audiovisual e publicitária.</p>
+                    </div>
+                    <div class="card" data-name="// Alex Mota"
+                        data-description="Head de Marketing da Construtora Engeco e especialista em marketing de luxo"
+                        data-sobre="Jornalista com MBA em Mídias Digitais e Gestão de E-commerce, Alex é reconhecido por liderar campanhas de alto padrão na Amazônia. Atuando com foco em performance, branding e sofisticação, foi o responsável pela estratégia do Botânica Office, o empreendimento comercial mais premiado do país.">
+                        <h2>// Alex Mota</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/AlexMota.png" alt="// Ben Ludmer">
+                        <p>Head de Marketing da Construtora Engeco e especialista em marketing de luxo</p>
+                    </div>
+                    <div class="card" data-name="// Carol Guerra"
+                        data-description="Especialista em branding, posicionamento e marcas de luxo no Norte do Brasil."
+                        data-sobre="Fundadora da CG Branding, Carol atua há mais de 7 anos no mercado da comunicação, tendo transformado mais de 200 marcas locais e nacionais com uma abordagem que une estratégia, estética e emoção. É reconhecida por mostrar que branding vai além da imagem, é sentimento, identidade e posicionamento claro.">
+                        <h2>// Carol Guerra</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/CarolGuerra.png" alt="// Ben Ludmer">
+                        <p>Especialista em branding, posicionamento e marcas de luxo no Norte do Brasil.</p>
+                    </div>
+                    <div class="card" data-name="// Rodrigo Kallas"
+                        data-description="Sócio e CEO da Kallas Mídia OOH"
+                        data-sobre="Apaixonado por tênis e pai de duas filhas, atua no mercado de marketing e publicidade há 29 anos, especialista em planejamento estratégico e gestão de expansão. Além de Criador de conteúdo especializado para o LinkedIn e para a Coluna "Competência & Gestão", é coautor do livro "Marketing, do Clássico ao Digital: Caminhos para o sucesso". Criou ainda, em parceria com a FGV, o primeiro curso presencial de Atualização em Mídia OOH da América Latina.">
+                        <h2>// Rodrigo Kallas</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/06/RODRIGOKALLAS-2.png" alt="// Ben Ludmer">
+                        <p>Sócio e CEO da Kallas Mídia OOH</p>
+                    </div>
+                    <div class="card" data-name="// Afrânio Soares Filho"
+                        data-description="Referência regional em inteligência de mercado e análise estratégica."
+                        data-sobre="Presidente da Action Pesquisas e doutor em Administração, Afrânio une conhecimento acadêmico e prática de campo em estudos que impactam decisões empresariais e políticas. Com mais de 20 anos de atuação, ele mostra como os dados certos podem transformar percepções, posicionamentos e resultados reais.">
+                        <h2>// Afrânio Soares Filho</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/07/Afranio-1.png" alt="// Ben Ludmer">
+                        <p>Referência regional em inteligência de mercado e análise estratégica.</p>
+                    </div>
+                    <div class="card" data-name="// Jack Serafim"
+                        data-description="Especialista em marketing político, comunicação pública e posicionamento estratégico."
+                        data-sobre="Com trajetória que une rádio, publicidade, jornalismo digital e gestão pública, Jack se tornou referência em campanhas eleitorais e comunicação institucional no Amazonas. Já liderou estratégias que marcaram a política regional, foi secretário de comunicação de Manaus e transformou o modo como o poder público se conecta com a população, sempre com foco em influência, narrativa e resultado.">
+                        <h2>// Jack Serafim</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/07/Jack-Serafim@05x.png" alt="// Ben Ludmer">
+                        <p>Especialista em marketing político, comunicação pública e posicionamento estratégico.</p>
+                    </div>
+                    <div class="card" data-name="// Flávia Sausmikat Soares"
+                        data-description="Referência em pesquisa qualitativa e comportamento do consumidor."
+                        data-sobre="Diretora-geral do Instituto Action, Flávia atua há mais de duas décadas conduzindo estudos que revelam a alma do mercado. Com sensibilidade, técnica e ética, ela transforma dados em decisões estratégicas e conecta marcas ao que realmente importa: as pessoas.">
+                        <h2>// Flávia Sausmikat Soares</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/07/Flavia-Sausmikat@05x.png" alt="// Ben Ludmer">
+                        <p>Referência em pesquisa qualitativa e comportamento do consumidor.</p>
+                    </div>
+                    <div class="card" data-name="// Maurício Stellato"
+                        data-description="Referência nacional em automação de conversas e estratégia com IA."
+                        data-sobre="Executivo de Parcerias Estratégicas da Blip, Maurício transforma o WhatsApp em um canal de vendas e relacionamento com propósito. Com mais de 40 anos de experiência em tecnologia, marketing e negócios, mostra como unir automação, inteligência artificial e empatia para criar experiências que engajam, fidelizam e geram resultados reais.">
+                        <h2>// Maurício Stellato</h2>
+                        <img src="https://dsx.com.vc/wp-content/uploads/2025/07/Mauricio@05x.png" alt="// Ben Ludmer">
+                        <p>Referência nacional em automação de conversas e estratégia com IA.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay" id="overlay"></div>
+            <div class="popup" id="popup">
+                <button class="close-btn" id="closeBtn">✕</button>
+                <div class="popup-img">
+                    <img id="popupImage" src="" alt="">
+                </div>
+                <div>
+                    <h2 id="popupName"></h2>
+                    <p id="popupDescription"></p>
+                    <p id="popupSobre"></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="logo-footer">
+                    <svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 343.84 228">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #fff;
+                                }
+
+                                .cls-2 {
+                                    fill: #f5a205;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Camada_1-2" data-name="Camada 1">
+                            <g>
+                                <g>
+                                    <path class="cls-1"
+                                        d="M95.79,96.46l16.38-1.44c1.48-5.73,2.33-11.98,2.6-18.71-8.66-6.66-14.83-16.41-14.83-31.58,0-5.97,1.18-11.53,3.35-16.55-11.18-15.22-31.07-23.39-62.3-23.39H0v133.07h40.99c29.84,0,49.33-7.62,60.76-21.56-2.47-4.61-4.23-9.74-5.19-15.35l-.77-4.5ZM42.64,105.15h-5.51V37.33h5.15c28.3,0,34.92,11.76,34.92,33.82s-6.62,34-34.55,34Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M197.92,120.73l-3.14-3.12,10.33-10.39,5.05-5.08.02-.02c.07-.97.12-1.94.12-2.94,0-.04,0-.07,0-.11-.11-47.96-69.98-32.64-69.98-55.41,0-.03,0-.06,0-.1.06-6.63,5.83-10.57,15-10.57,10.13,0,16.46,4.16,19.35,12.66l33.82-3.25c0-.07-.02-.14-.03-.2-.12-.83-.27-1.64-.43-2.45l-6.08-6.12-7.18-7.22,1.9-1.89,2.91-2.89c-9.4-11.24-25.31-16.84-45.53-16.84-23.68,0-42.02,10.55-47.9,27.76-1.3,3.79-2,7.9-2.01,12.3,0,.03,0,.06,0,.09,0,11.97,4.29,20.2,10.72,26.13,19.21,17.69,57.59,14.86,58.35,29.7,0,.02,0,.03,0,.05.18,6.87-6.15,11.21-16.28,11.21-11.39,0-18.45-5.06-21.16-14.65l-24.95,2.19-10.1.88h-.04c.75,4.41,2.03,8.46,3.78,12.16,8.34,17.68,27.52,27.08,52.64,27.08,19.43,0,34.77-5.87,43.88-15.89l-.1-.1-2.99-2.98Z">
+                                    </path>
+                                    <g>
+                                        <polygon class="cls-1"
+                                            points="301.88 75.05 298.91 78.03 278.39 98.67 275.43 101.65 317.22 143.73 343.84 117.29 301.88 75.05">
+                                        </polygon>
+                                        <path class="cls-1"
+                                            d="M205.55,31.3l6.38,6.42,14.74,14.84c1.17-.85,2.42-1.58,3.74-2.2,2.97-1.39,6.28-2.17,9.78-2.17,6.51,0,12.4,2.71,16.61,7.05l9.74-9.8,2.97-2.98L227.34,0l-22.11,21.97-3.02,3-.08.08-1.4,1.39,4.67,4.7.17.17Z">
+                                        </path>
+                                        <path class="cls-1"
+                                            d="M295.95,75.05l2.97-2.98,2.97-2.98,41.95-42.18-.16-.16L317.23.45l-41.78,42.02-2.97,2.98-2.97,2.98-10.05,10.11c.81,1.22,1.51,2.51,2.08,3.87,1.15,2.75,1.79,5.76,1.79,8.92,0,3.55-.81,6.91-2.24,9.92-.63,1.32-1.38,2.56-2.23,3.73-.83,1.14-1.77,2.19-2.79,3.16-4.15,3.92-9.74,6.33-15.88,6.33-3.11,0-6.08-.62-8.8-1.74-1.37-.56-2.67-1.25-3.89-2.06l-13.29,13.37-5.24,5.27-.07.07-8.02,8.06-.16.16,2.85,2.84.09.09,2.89,2.88,20.77,20.65,42.17-42.4,2.97-2.98,2.97-2.98,20.52-20.63Z">
+                                        </path>
+                                        <path class="cls-2"
+                                            d="M255.95,61.76c-.7-1.15-1.52-2.22-2.45-3.19-3.36-3.5-8.08-5.7-13.31-5.7-2.18,0-4.26.4-6.2,1.1-1.41.5-2.74,1.16-3.97,1.97-1.18.78-2.25,1.7-3.22,2.72-3.13,3.31-5.07,7.76-5.07,12.67,0,5.27,2.23,10.01,5.77,13.38.97.92,2.05,1.74,3.2,2.43.06.04.13.08.19.12,1.29.76,2.68,1.37,4.15,1.79,1.63.48,3.36.74,5.14.74,4.86,0,9.28-1.9,12.58-4.98,1.03-.96,1.96-2.03,2.75-3.2.82-1.22,1.48-2.55,2-3.96.72-1.98,1.14-4.1,1.14-6.32,0-1.82-.28-3.58-.77-5.24-.43-1.47-1.05-2.85-1.82-4.14-.04-.07-.08-.13-.12-.19Z">
+                                        </path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <path class="cls-1"
+                                        d="M2.91,164.36h8.14c11.52,0,16,4.87,16,14.23s-4.48,14.23-16,14.23H2.91v-28.46ZM11.28,187.28c7.15,0,9.47-2.79,9.47-8.73s-2.32-8.73-9.51-8.73h-2.12v17.45h2.16Z">
+                                    </path>
+                                    <path class="cls-1" d="M31.84,164.36h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M42.92,178.51c0-8.69,5.46-14.58,13.52-14.58,6.29,0,10.42,2.44,12.19,7.66l-6.13,1.14c-1.06-2.4-3.03-3.5-5.97-3.5-4.44,0-7.35,3.66-7.35,9.35s2.87,9.32,7.43,9.32c3.89,0,6.49-2.24,6.72-6.52h-6.8v-4.8h13.17c.08.87.08,1.65.08,2.44,0,8.77-5.11,14.11-13.44,14.11s-13.4-5.74-13.4-14.62Z">
+                                    </path>
+                                    <path class="cls-1" d="M74.6,164.36h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M91.89,169.91h-6.96v-5.54h20.05v5.54h-6.88v22.92h-6.21v-22.92Z"></path>
+                                    <path class="cls-1"
+                                        d="M126.28,187.87h-12.19l-1.81,4.95h-6.52l11.28-28.46h6.29l11.32,28.46h-6.56l-1.81-4.95ZM124.63,183.31l-4.44-12.19-4.44,12.19h8.88Z">
+                                    </path>
+                                    <path class="cls-1" d="M137.16,164.36h6.21v22.92h10.53v5.54h-16.74v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M166.64,185.12l5.94-.79c.86,2.56,3.03,3.93,6.09,3.93s4.91-1.26,4.87-3.38c-.08-5.58-15.88-1.93-15.88-12.62,0-4.99,4.25-8.33,10.34-8.33s10.34,2.63,11.44,7.7l-5.7.79c-.9-2.28-2.71-3.46-5.54-3.46s-4.48,1.22-4.48,3.18c0,6.05,16.08,1.73,16.08,12.54,0,5.15-4.36,8.53-11.08,8.53-6.29,0-10.85-2.91-12.07-8.1Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M193.48,179.61v-15.25h6.21v15.21c0,5.7,1.77,8.06,5.86,8.06s5.82-2.36,5.82-8.02v-15.25h6.25v15.29c0,9.2-4.05,13.56-12.07,13.56s-12.07-4.32-12.07-13.6Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M225.87,164.36h7.55l6.6,21.97,6.6-21.97h7.59l4.6,28.46h-6.29l-3.22-20.28-6.25,20.28h-6.01l-6.29-20.28-3.22,20.28h-6.25l4.6-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M265.6,164.36h7.55l6.6,21.97,6.6-21.97h7.59l4.6,28.46h-6.29l-3.22-20.28-6.25,20.28h-6.01l-6.29-20.28-3.22,20.28h-6.25l4.6-28.46Z">
+                                    </path>
+                                    <path class="cls-1" d="M302.54,164.36h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M319.84,169.91h-6.96v-5.54h20.05v5.54h-6.88v22.92h-6.21v-22.92Z"></path>
+                                    <path class="cls-1"
+                                        d="M2.91,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54H2.91v-28.46Z">
+                                    </path>
+                                    <path class="cls-2"
+                                        d="M33.61,212.48l-9.35-13.4h7.43l5.39,8.18,5.42-8.18h7.43l-9.35,13.36,10.34,15.09h-7.31l-6.52-9.91-6.52,9.91h-7.31l10.38-15.05Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M53.37,199.07h8.21c9.94,0,13.76,3.07,13.76,10.53s-3.81,10.42-13.6,10.42h-2.16v7.51h-6.21v-28.46ZM62.69,214.56c4.4,0,6.33-1.42,6.33-5.07s-1.93-5.03-6.33-5.03h-3.1v10.1h3.1Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M79.51,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54h-18.83v-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M118.97,227.53l-4.99-9.12c-.51.04-1.02.04-1.53.04h-2.99v9.08h-6.25v-28.46h9.2c9.16,0,12.89,3.07,12.89,9.55,0,4.09-1.81,7.08-5.58,8.65l6.29,10.26h-7.04ZM112.72,213.77c4.36,0,6.33-1.18,6.33-4.72s-1.96-4.76-6.33-4.76h-3.3v9.47h3.3Z">
+                                    </path>
+                                    <path class="cls-1" d="M130.17,199.07h6.21v28.46h-6.21v-28.46Z"></path>
+                                    <path class="cls-1"
+                                        d="M142.23,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54h-18.83v-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M165.93,199.07h6.09l12.22,18.71v-18.71h6.21v28.46h-6.05l-12.26-18.79v18.79h-6.21v-28.46Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M195.29,213.38c0-10.1,6.68-14.66,13.6-14.66,5.31,0,11.16,2.63,12.81,10.18l-6.09,1.06c-.98-3.77-3.66-5.54-6.76-5.54-4.25,0-7.15,3.38-7.15,8.96s2.87,8.92,7.15,8.92c3.14,0,5.86-1.81,6.76-5.7l6.13,1.06c-1.61,7.67-7.51,10.34-12.85,10.34-6.92,0-13.6-4.25-13.6-14.62Z">
+                                    </path>
+                                    <path class="cls-1"
+                                        d="M226.18,199.07h18.83v5.54h-12.62v6.13h11.91v4.83h-11.91v6.41h12.62v5.54h-18.83v-28.46Z">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
+                <p>
+                    CNPJ: 10.279.661/0001-51
+                    <br>
+                    ©2025 Digital Comunicação. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>
